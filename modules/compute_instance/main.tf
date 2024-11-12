@@ -1,6 +1,6 @@
 resource "oci_core_instance" "instance" {
   compartment_id      = var.compartment_id
-  availability_domain = data.oci_identity_availability_domains.ads.availability_domains[0].name
+  availability_domain = data.oci_identity_availability_domains.ads.availability_domains[2].name
   shape               = var.instance_shape
   shape_config {
     ocpus         = var.ocpus          # Specify the number of OCPUs
