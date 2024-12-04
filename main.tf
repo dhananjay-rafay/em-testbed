@@ -8,4 +8,5 @@ module "compute_instance" {
   security_list_id    = var.tb_security_id
   ocpus               = var.ocpus
   memory_in_gbs       = var.memory_in_gbs
+  tb_name             = var.tb_name
 }

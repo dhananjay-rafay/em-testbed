@@ -4,6 +4,7 @@ variable "image_id" {}
 variable "subnet_id" {}
 variable "ssh_public_key" {}
 variable "security_list_id" {}
+variable "tb_name" {}
 variable "ocpus" {
   description = "The number of OCPUs for flexible shapes"
   type        = number

@@ -2,6 +2,7 @@ resource "oci_core_instance" "instance" {
   compartment_id      = var.compartment_id
   availability_domain = data.oci_identity_availability_domains.ads.availability_domains[2].name
   shape               = var.instance_shape
+  display_name        = "${var.tb_name}-core-dev-node-0"
   shape_config {
     ocpus         = var.ocpus          # Specify the number of OCPUs
     memory_in_gbs = var.memory_in_gbs   # Specify the amount of memory in GBs
